@@ -1,0 +1,309 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url(Font/Montserrat-Italic-VariableFont_wght.ttf);
+    src: url(Font/Montserrat-VariableFont_wght.ttf);
+}
+
+/* Menu de navigacion */
+body {
+    background: #ffffff;
+}
+
+body .MenuPrincipal {
+    background: #F1F464;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding: 21px 144px;
+}
+
+body .MenuPrincipal .MenuItems {
+    align-items: center;
+    display: flex;
+}
+
+body .MenuPrincipal .logo > a {
+    text-decoration: none;
+    color: #EF1089;
+    font-size: 32px;
+    font-weight: 900;
+}
+
+body .MenuPrincipal .MenuItems .Imagen > img {
+    display: none;
+}
+
+body .MenuPrincipal .MenuItems .Items {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 54px 0 0;
+    width: 180px;
+}
+
+body .MenuPrincipal .MenuItems .Items a {
+    text-decoration: none;
+    color: #EF1089;
+    font-weight: 800;
+}
+
+body .MenuPrincipal .MenuItems .Boton a {
+    background: #EF1089;
+    border: 0;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 800;
+    text-decoration: none;
+    padding: 16px 42px;
+}
+
+/* Media queries */
+@media only screen and (max-width: 1024px) {
+    body .MenuPrincipal {
+        padding: 21px 56px;
+    }
+}
+
+@media only screen and (max-width: 834px) {
+    body .MenuPrincipal {
+        padding: 21px 56px;
+    }
+
+    body .MenuPrincipal .MenuItems .Imagen > img {
+        display: unset;
+    }
+
+    body .MenuPrincipal .MenuItems .Items {
+        display: none;
+    }
+
+    body .MenuPrincipal .MenuItems .Boton {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 360px) {
+    body .MenuPrincipal {
+        padding: 21px 21px;
+    }
+}
+
+/* Head */
+
+body .Head {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 344px;
+}
+
+body .Head > h1 {
+    font-size: 80px;
+}
+
+body .Head > p {
+    font-size: 20px;
+    width: 600px;
+}
+
+/* Media queries */
+@media only screen and (max-width: 1024px) {
+    body .Head {
+        padding: 100px 144px;
+    }
+}
+
+@media only screen and (max-width: 834px) {
+    body .Head {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+        padding: 80px 40px;
+    }
+
+    body .Head > p {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    body .Head > h1 {
+        font-size: 50px;
+    }
+
+    body .Head > p {
+        font-size: 18px;
+    }
+}
+
+/* Work */
+body .Work {
+    position: relative;
+    padding: 40px;
+}
+
+body .Work .Work1 {
+    display: flex;
+}
+
+body .Work .Work1 .Imagen img {
+    vertical-align: top;
+    width: 100%;
+}
+
+body .Work .Work2 {
+    display: flex;
+}
+
+body .Work .Work2 .Imagen img {
+    vertical-align: top;
+    width: 100%;
+}
+
+body .Work .Imagen img {
+    vertical-align: top;
+    width: 100%;
+}
+
+/* Media queries */
+@media only screen and (max-width: 834px) {
+    body .Work {
+        padding: 0;
+    }
+
+    body .Work .Work1 {
+        flex-wrap: wrap;
+    }
+
+    body .Work .Work2 {
+        flex-wrap: wrap;
+    }
+}
+
+/* Info */
+
+body .Info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    padding: 100px 144px;
+}
+
+body .Info > h4 {
+    font-size: 54px;
+    text-align: center;
+    width: 100%;
+}
+
+body .Info button {
+    background: #EF1089;
+    border: none;
+    border-radius: 50px;
+    color: #ffffff;
+    font-size: 24px;
+    padding: 16px 32px;
+}
+
+/* Media queries */
+@media only screen and (max-width: 360px) {
+    body .Info {
+        gap: 24px;
+        padding: 80px 60px;
+    }
+
+    body .Info > h4 {
+        font-size: 34px;
+    }
+
+    body .Info button {
+        font-size: 14px;
+    }
+}
+
+/* Footer */
+
+body .Footer {
+    align-items: center;
+    background: #F1F464;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+body .Footer .Footer2 .info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px;
+    width: 500px;
+}
+
+body .Footer .Footer2 .info > h1 {
+    color: #EF1089;
+    font-size: 60px;
+}
+
+body .Footer .Footer2 .info > p {
+    color: #242424;
+    font-size: 16px;
+    text-align: center;
+}
+
+body .Footer .Footer2 .info .Plataformas {
+    display: flex;
+    gap: 10px;
+}
+
+body .Footer .Copyright > h5 {
+    background: #EF1089;
+    color: #ffffff;
+    padding: 40px;
+    text-align: center;
+    width: 1520px;
+}
+
+/* Media queries */
+@media only screen and (max-width: 1024px) {
+    body .Footer {
+        padding: 0 100px;
+    }
+
+    body .Footer .Copyright > h5 {
+        width: 1006px;
+    }
+}
+
+@media only screen and (max-width: 834px) {
+    body .Footer {
+        gap: 50px;
+    }
+
+    body .Footer .Copyright > h5 {
+        width: 816px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    body .Footer {
+        padding: 0;
+    }
+    
+    body .Footer .Footer2 .info {
+        width: 300px;
+    }
+
+    body .Footer .Copyright > h5 {
+        width: 342px;
+    }
+}

@@ -1,0 +1,563 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url(Font/Montserrat-Italic-VariableFont_wght.ttf);
+    src: url(Font/Montserrat-VariableFont_wght.ttf);
+}
+
+/* Menu de navigacion */
+body {
+    background: #ffffff;
+}
+
+body .MenuPrincipal {
+    background: #F1F464;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding: 21px 144px;
+}
+
+body .MenuPrincipal .MenuItems {
+    align-items: center;
+    display: flex;
+}
+
+body .MenuPrincipal .logo > a {
+    text-decoration: none;
+    color: #EF1089;
+    font-size: 32px;
+    font-weight: 900;
+}
+
+body .MenuPrincipal .MenuItems .Imagen > img {
+    display: none;
+}
+
+body .MenuPrincipal .MenuItems .Items {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 54px 0 0;
+    width: 180px;
+}
+
+body .MenuPrincipal .MenuItems .Items a {
+    text-decoration: none;
+    color: #EF1089;
+    font-weight: 800;
+}
+
+body .MenuPrincipal .MenuItems .Boton a {
+    background: #EF1089;
+    border: 0;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 800;
+    text-decoration: none;
+    padding: 16px 42px;
+}
+
+/* Media queries */
+@media only screen and (max-width: 1024px) {
+    body .MenuPrincipal {
+        padding: 21px 56px;
+    }
+}
+
+@media only screen and (max-width: 834px) {
+    body .MenuPrincipal {
+        padding: 21px 56px;
+    }
+
+    body .MenuPrincipal .MenuItems .Imagen > img {
+        display: unset;
+    }
+
+    body .MenuPrincipal .MenuItems .Items {
+        display: none;
+    }
+
+    body .MenuPrincipal .MenuItems .Boton {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 360px) {
+    body .MenuPrincipal {
+        padding: 21px 21px;
+    }
+}
+
+/* Head */
+
+body .Head {
+    align-items: center;
+    display: flex;
+}
+
+body .Info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    padding: 24px 54px;
+    width: 1100px;
+}
+
+body .Info .Titulo-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 500px;
+}
+
+body .Info .Titulo-info > h6 {
+    color: #C0C41D;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+body .Info .Titulo-info > h4 {
+    color: #242424;
+    font-size: 56px;
+    text-align: center;
+    width: 100%;
+}
+
+body .Info .Titulo-info > h3 {
+    color: #242424;
+    font-size: 56px;
+    text-align: right;
+    width: 300px;
+}
+
+body .Info .Titulo-info > h1 {
+    color: #EF1089;
+    font-size: 100px;
+    text-align: center;
+    width: 100%;
+}
+
+body .Info .Titulo-info > span {
+    border: 3px solid #242424;
+    gap: 15px;
+    width: 80%;
+}
+
+body .Info p {
+    font-size: 16px;
+    text-align: center;
+    width: 500px;
+}
+
+body .Head .Imagen img {
+    vertical-align: top;
+    width: 100%;
+}
+
+/* Media queries */
+@media only screen and (max-width: 1024px) {
+    body .Info {
+        padding: 24px 54px;
+        width: 580px;
+    }
+}
+
+@media only screen and (max-width: 834px) {
+    body .Head {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    body .Head .Imagen img {
+        object-fit: cover;
+        height: 500px;
+        width: 817px;
+    }
+
+    body .Info {
+        padding: 44px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    body .Head .Imagen img {
+        object-fit: cover;
+        height: 250px;
+        width: 344px;
+    }
+
+    body .Info {
+        width: 340px;
+    }
+
+    body .Head .Info > h1 {
+        font-size: 100px;
+    }
+
+    body .Info .Titulo-info > span {
+        width: 50%;
+    }
+
+    body .Head .Info > p {
+        font-size: 18px;
+        width: 300px;
+    }
+}
+
+/* Education */
+body .Edu {
+    background: #242424;
+    display: flex;
+    justify-content: space-between;
+    padding: 64px 344px;
+}
+
+body .Edu .Education > h1 {
+    color: #ffffff;
+    font-size: 54px;
+    height: 100px;
+}
+
+body .Edu .Education .Group1 {
+    color: #ffffff;
+    height: 90px;
+}
+
+body .Edu .Education .Group2 > h4 {
+    color: #ffffff;
+    text-align: end;
+}
+
+body .Edu .Education .Group2 > p {
+    color: #ffffff;
+    text-align: end;
+}
+
+body .Edu .Experience > h1 {
+    color: #ffffff;
+    font-size: 54px;
+    height: 100px;
+}
+
+body .Edu .Experience .Group3 {
+    color: #ffffff;
+    height: 90px;
+}
+
+body .Edu .Experience .Group4 > h4 {
+    color: #ffffff;
+    text-align: end;
+}
+
+body .Edu .Experience .Group4 > p {
+    color: #ffffff;
+    text-align: end;
+}
+
+/* Media queries */
+@media only screen and (max-width: 1024px) {
+    body .Edu {
+        flex-wrap: wrap;
+        gap: 74px;
+    }
+}
+
+@media only screen and (max-width: 834px) {
+    body .Edu {
+        justify-content: center;
+        padding: 64px 144px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    body .Edu .Education > h1 {
+        font-size: 44px;
+    }
+
+    body .Edu .Experience > h1 {
+        font-size: 44px;
+    }
+}
+
+/* Skills */
+body .Skills {
+    display: flex;
+}
+
+body .Skills .Izquierda {
+    align-items: center;
+    background: #EF1089;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    padding: 44px 244px;
+}
+
+body .Skills .Izquierda > h1 {
+    font-size: 54px;
+    text-align: center;
+    width: 100%;
+}
+
+body .Skills .Izquierda .Habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    width: 300px;
+}
+
+body .Skills .Izquierda .Habilidades .Photoshop {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    width: 300px;
+}
+
+body .Skills .Izquierda .Habilidades .Photoshop > span {
+    border: 4px solid #ffffff;
+    width: 230px;
+}
+
+body .Skills .Izquierda .Habilidades .Illustrator {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    width: 300px;
+}
+
+body .Skills .Izquierda .Habilidades .Illustrator > span {
+    border: 4px solid #ffffff;
+    width: 260px;
+}
+
+body .Skills .Izquierda .Habilidades .Premiere {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    width: 300px;
+}
+
+body .Skills .Izquierda .Habilidades .Premiere > h4 {
+    width: 300px;
+}
+
+body .Skills .Izquierda .Habilidades .Premiere > span {
+    border: 4px solid #ffffff;
+    width: 100px;
+}
+
+body .Skills .Izquierda .Habilidades .InDesign {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    width: 300px;
+}
+
+body .Skills .Izquierda .Habilidades .InDesign > h4 {
+    width: 300px;
+}
+
+body .Skills .Izquierda .Habilidades .InDesign > span {
+    border: 4px solid #ffffff;
+    width: 50px;
+}
+
+body .Skills .Izquierda .Habilidades .Clip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    width: 300px;
+}
+
+body .Skills .Izquierda .Habilidades .Clip > span {
+    border: 4px solid #ffffff;
+    width: 300px;
+}
+
+body .Skills .Derecha {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 44px 244px;
+}
+
+body .Skills .Derecha .Creative {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    width: 300px;
+
+}
+
+body .Skills .Derecha .Creative > h1 {
+    text-align: center;
+    font-size: 54px;
+}
+
+body .Skills .Derecha .Creative .Group1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    width: 200px;
+}
+
+body .Skills .Derecha .Languages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    width: 300px;
+
+}
+
+body .Skills .Derecha .Languages > h1 {
+    font-size: 54px;
+}
+
+body .Skills .Derecha .Languages .Group2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    width: 200px;
+}
+
+/* Media queries */
+@media only screen and (max-width: 1024px) {
+    body .Skills {
+        flex-wrap: wrap;
+    }
+
+    body .Skills .Izquierda {
+        padding: 44px 344px;
+    }
+
+    body .Skills .Derecha {
+        padding: 44px 344px;
+    }
+}
+
+@media only screen and (max-width: 834px) {
+    body .Skills .Izquierda {
+        padding: 44px 244px;
+    }
+
+    body .Skills .Derecha {
+        padding: 44px 244px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    body .Skills .Izquierda {
+        padding: 44px 14px;
+    }
+
+    body .Skills .Izquierda > h1 {
+        font-size: 44px;
+    }
+
+    body .Skills .Derecha {
+        padding: 44px 14px;
+    }
+
+    body .Skills .Derecha .Creative > h1 {
+        font-size: 44px;
+    }
+
+    body .Skills .Derecha .Languages > h1 {
+        font-size: 44px;
+    }
+}
+
+/* Footer */
+body .Footer {
+    align-items: center;
+    background: #F1F464;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+body .Footer .Footer2 .info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px;
+    width: 500px;
+}
+
+body .Footer .Footer2 .info > h1 {
+    color: #EF1089;
+    font-size: 60px;
+}
+
+body .Footer .Footer2 .info > p {
+    color: #242424;
+    font-size: 16px;
+    text-align: center;
+}
+
+body .Footer .Footer2 .info .Plataformas {
+    display: flex;
+    gap: 10px;
+}
+
+body .Footer .Copyright > h5 {
+    background: #EF1089;
+    color: #ffffff;
+    padding: 40px;
+    text-align: center;
+    width: 1520px;
+}
+
+/* Media queries */
+@media only screen and (max-width: 1024px) {
+    body .Footer {
+        padding: 0 100px;
+    }
+
+    body .Footer .Copyright > h5 {
+        width: 1006px;
+    }
+}
+
+@media only screen and (max-width: 834px) {
+    body .Footer {
+        gap: 50px;
+    }
+
+    body .Footer .Copyright > h5 {
+        width: 816px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    body .Footer {
+        padding: 0;
+    }
+    
+    body .Footer .Footer2 .info {
+        width: 300px;
+    }
+
+    body .Footer .Copyright > h5 {
+        width: 342px;
+    }
+}
